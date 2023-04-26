@@ -29,7 +29,9 @@ class Main {
           int age = scanner.nextInt();
           System.out.println("Podaj ulicę: ");
           String ulica = scanner.next();
-          s.addStudent(new Student(name,nazwisko,age,ulica));
+          System.out.println("Podaj datę urodzenia: ");
+          String data = scanner.next();
+          s.addStudent(new Student(name,nazwisko,age,ulica,data));
           break;
 
         case 2: 
